@@ -1,0 +1,32 @@
+.content1,
+.content2 {
+  font-family: 'TT Lakes';
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #1B1C21;
+  margin: 0;
+}
+
+.content2 {
+  display: none;
+}
+
+@media (min-width: 760px) {
+    .content1,
+    .content2 {
+      line-height: 20px;
+    }
+  
+    .content2 {
+      display: block;
+    }
+}
+
+@media (min-width: 1110px) {
+      /* Область с контентом */
+  .content1,
+  .content2 {
+    line-height: 20px;
+  }
+}

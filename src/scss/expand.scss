@@ -1,0 +1,40 @@
+
+  /* Кнопка читать далее */
+  .expand {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    margin-left: 24px;
+  
+    &__btn {
+      font-family: 'TT Lakes';
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: #1B1C21;
+      font-weight: 500;
+      box-sizing: border-box;
+      width: 100px;
+      height: 24px;
+      background-color: #F8F8F8;
+      border: none;
+    }
+  
+    &__btn-icon {
+      margin-right: 16px;
+    }
+  }
+
+  @media (min-width: 760px) {
+    .expand {
+        margin-top: 10px;
+        margin-left: 9px;
+        /* padding-left: 24px; */
+      }
+  }
+  @media (min-width: 785px) {
+    .expand {
+        margin-top: 14px;
+        margin-left: 0;
+        padding-left: 6px;
+      }
+  }

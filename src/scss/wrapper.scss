@@ -1,0 +1,15 @@
+.wrapper {
+    // height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    margin: auto;
+    // background-color: #F8F8F8;
+}
+
+@media (min-width: 1110px) {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+}

@@ -1,0 +1,124 @@
+
+.price {
+
+    min-width: 320px;
+    position: relative;
+    // padding-right: 16px;
+    // padding-left: 16px;
+   
+    background-color: #f2f2f2;
+
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 24px, black calc(100% - 24px), transparent);
+    
+
+    &__header {
+        font-family: 'TT Lakes';
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+        // font-weight: 500;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        background-color: #F8F8F8;
+        color: #7E7E82;
+
+        padding: 16px;
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__item {
+        
+        text-decoration: none;
+        list-style: none;
+        // margin-right: 38px !important;
+
+
+
+    }
+
+    &__container {
+        box-sizing: border-box;
+        // min-height: 200px;
+        position: relative;
+        width: 240px;
+        height: 200px;
+        
+        padding: 16px;
+        margin: 16px;
+        border-radius: 6px;
+        background-color: #fff;
+        border: 1px solid #EAEAEA;
+      
+    }
+
+    &__box {
+        margin: 0;
+        margin-bottom: 16px;
+        font-family: 'TT Lakes';
+        font-size: 14px;
+        line-height: 18px;
+        /* or 129% */
+
+        letter-spacing: 0.2px;
+
+        color: #1B1C21;
+    }
+
+    &__box h3 {
+        margin: 0;
+        color: #7E7E82;
+        font-weight: normal;
+    }
+
+    &__list {
+        text-decoration: none;
+      font-family: 'TT Lakes';
+        font-size: 14px;
+        margin: 0;
+    }
+    
+
+
+}
+
+.price__btn {
+    position: absolute;
+    box-sizing: border-box;
+    top: 165px;
+    left: 120px;
+
+    // position: relative;
+    border-radius: 16px;
+    background-color: #FF3E79;
+    border: none;
+    width: 119px;
+    height: 32px;
+    font-family: 'TT Lakes';
+    font-size: 12px;
+    line-height: 24px;
+    /* identical to box height, or 200% */
+
+    text-align: right;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.price__img {
+    width: 7px;
+    height: 10px;
+}
+
+@media (min-width: 760px) {
+    .price {
+        display: none;
+    }
+}

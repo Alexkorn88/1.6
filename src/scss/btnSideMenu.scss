@@ -1,0 +1,54 @@
+.btn-side-menu {
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    padding: 0 10px;
+  
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-align: center;
+    height: 40px;
+    background-color: #F8F8F8;
+    border-radius: 6px;
+    border: 2px solid #F8F8F8;
+  }
+  
+  .btn-side-menu:hover {
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-align: center;
+    height: 40px;
+    background: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    padding: 0 10px;
+  
+  }
+  
+  .btn-side-menu:active {
+    color: #F8F8F8;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-align: center;
+    height: 40px;
+    background: #F8F8F8;
+    border: 2px solid #FFF;
+    border-radius: 6px;
+    padding: 0 10px;
+  }
+
+  @media (min-width: 1110px) {
+    .btn-side-menu {
+        padding: 0 8px;
+      }
+    
+      .btn-side-menu:hover {
+        padding: 0 8px;
+      }
+    
+      .btn-side-menu:active {
+        padding: 0 8px;
+      }
+  }

@@ -1,0 +1,94 @@
+
+.repair {
+    margin-right: 8px;
+  }
+  
+  .checkstatus {
+    margin-left: 8px;
+  }
+  
+  .menu {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: none;
+  }
+  
+  .btn {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    display: inline-block;
+    padding: 0;
+  }
+  
+  .btn__link,
+  .btn-side-menu__link,
+  .body__repair-link,
+  .body__checkstatus-link,
+  .expand__btn-link {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    border: none;
+  }
+  
+  .body__repair-btn,
+  .body__checkstatus-btn {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    border: none;
+    background-color: inherit;
+  }
+  
+  .logo__btn {
+    width: 96px;
+    height: 51px;
+    background-color: #fff;
+    border: none;
+    display: inline-block;
+    padding: 0;
+  
+    &__btn-img {
+      width: 96px;
+      height: 51px;
+      display: inline-block;
+    }
+  }
+  
+  .contact-info {
+    display: none;
+  }
+  
+  .call {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: none;
+    margin-right: 8px;
+  }
+  
+  
+  .chat {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: none;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+  
+  .profile {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: none;
+    margin-right: 20px;
+    margin-left: 8px;
+  }
+
+  @media (min-width: 760px) {
+    
+  }

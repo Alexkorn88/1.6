@@ -1,0 +1,60 @@
+.side-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 147px;
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    line-height: 16px;
+    /* or 114% */
+
+    text-align: center;
+
+    color: #7E7E82;
+
+    mix-blend-mode: normal;
+    opacity: 0.72;
+
+    background-color: #f2f2f2;
+    padding: 16px;
+    
+    // &__years {}
+
+    // &__politic {}
+
+    // &__info {}
+}
+
+@media (min-width: 760px) {
+    .side-footer {
+        height: 105px;
+        flex-direction: row;
+
+        &__years {
+            width: 218px;
+            text-align: left;
+            
+        }
+
+        &__politic {
+            width: 214px;
+        }
+
+        &__info {
+            text-align: right;
+            width: 213px;
+        }
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .side-footer {
+        height: 85px;
+        &__info {
+            
+            width: 330px;
+        }
+    }
+}

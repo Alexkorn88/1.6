@@ -1,17 +1,60 @@
-$bgColor: #24292e;
-$text: rgb(68, 29, 29);
+@import "./wrapper.scss";
+@import "./container.scss";
+@import "./header.scss";
+@import "./body.scss";
+@import "./btnSideMenu.scss";
+@import "./content.scss";
+@import "./expand.scss";
+@import "./menu.scss";
+@import "./services.scss";
+@import "./tech-services.scss";
+@import "./price.scss";
+@import "./prices.scss";
+@import "./fonts.scss";
+@import "./btnRepChek.scss";
+@import "./swiper.scss";
+@import "./desc.scss";
+@import "./footer.scss";
+html {
+  box-sizing: border-box;
+}
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
 body {
-  padding: 1rem;
+
+  min-width: 320px;
+  overflow-x: hidden;
   margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+
 }
+
+/* Медиазапросы */
+/* Экран 768px */
+
+@media (min-width: 760px) {
+  
+  .contact-info {
+    display: flex;
+  }
+
+  /* Заголовок */
+  .title {
+    margin: 24px 24px;
+  }
+}
+
+
+/* Экран 1120px */
+@media (min-width: 1110px) {
+  body {
+    background-color: #F8F8F8;
+    margin: 0, auto;
+  }
+
+}
+

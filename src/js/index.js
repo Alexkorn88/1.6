@@ -1,3 +1,7 @@
 import '../scss/style.scss';
+import './burger';
 
-console.log('Works!');
+// import './techServicesBtn';
+import './swiper';
+import './servicesBtn';
+import './techServicesBtn';
