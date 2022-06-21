@@ -16,6 +16,7 @@ menuCall.addEventListener('click', ()=> {
   container.classList.add('transpsransyMax');
   menu.classList.add('transpsransyMax');
   menu.classList.remove('menu-container--hide');
+  menu.classList.toggle('menu-container--hiden');
 });
 
 menuContBtnClose.addEventListener('click', ()=> {
@@ -23,4 +24,5 @@ menuContBtnClose.addEventListener('click', ()=> {
   container.classList.remove('transpsransyMax');
   menu.classList.remove('transpsransyMax');
   container.classList.remove('transpsransy');
+  menu.classList.toggle('menu-container--hiden');
 });

@@ -33,6 +33,7 @@
         letter-spacing: -0.2px;
 
         color: #1B1C21;
+        
     }
 
     &__img {
@@ -44,7 +45,10 @@
 
     }
 }
-
+svg {
+    position: relative;
+   top: 1px;
+}
 @media (min-width: 760px) {
     .desc {
         &__content {
