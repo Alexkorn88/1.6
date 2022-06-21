@@ -13,7 +13,7 @@
 
 <body>
     <div class="wrapper">
-        <div class="menu-container menu-container--hide">
+        <div class="menu-container" id="menuCont">
             <header class="menu-header">
                 <ul class="menu-header__nav">
                     <div class="menu-header__nav-right">
@@ -25,7 +25,7 @@
                             </button>
                         </li>
                         <li class="menu-header__logo">
-                            <div class="menu-header__logo logo">
+                            <div class="menu-header__logo menu-logo">
                                 <button class="menu-logo__btn">
                                     <a href="#" class="menu-logo__btn-link">
                                         <img src="img/logo.svg" alt="logo" class="menu-logo__btn-img">
@@ -45,7 +45,7 @@
 
             </header>
             <div class="menu-main">
-                <div class="menu-main__nav">
+                <nav class="menu-main__nav">
                     <ul class="menu-main__list">
                         <li class="menu-main__item">
                             <button class="menu-item-btn">
@@ -104,19 +104,19 @@
                             </button>
                         </li>
                     </ul>
-                </div>
+                </nav>
                 <div class="menu-main__contact">
                     <div class="menu-main__contact-nav">
                         <ul class="menu-main__nav-btn">
                             <li class="menu-main__btn">
-                                <button class="menu-btn">
+                                <button class="menu-btn menu-btn-call">
                                     <a href="#" class="menu-btn__link">
                                         <img src="img/call.svg" alt="call" class="menu-btn__logo">
                                     </a>
                                 </button>
                             </li>
-                            <li class="menu-main__btn">
-                                <button class="menu-btn">
+                            <li class="menu-main__btn menu-btn-chat">
+                                <button class="menu-btn ">
                                     <a href="#" class="menu-btn__link">
                                         <img src="img/chat.svg" alt="chat" class="menu-btn__logo">
                                     </a>
@@ -164,6 +164,42 @@
                 </ul>
             </footer>
         </div>
+        <section class="modal feedback">
+            <div class="modal__wrapper">
+                <img src="img/burger-open.svg" alt="" class="modal__close">
+                <h2 class="modal__title">Обратная связь</h2>
+                <form action="" class="modal__form">
+                    <input class="modal__input" type="text" name="name" placeholder="Имя">
+                    <input class="modal__input" type="text" name="phone" placeholder="Телефон">
+                    <input class="modal__input" type="email" name="email" placeholder="Электронная почта">
+                    <textarea class="modal__input" name="message" id="" cols="20" rows="5"
+                        placeholder="Сообщение"></textarea>
+                    <p class="modal__confirm-text">Нажимая “отправить”, вы даете согласие на <span
+                            class="modal__pink">обработку персональных данных</span> и соглашаетесь с нашей <span
+                            class="modal__pink">политикой конфиденциальности</span> </p>
+                    <button class="sender-btn modal__submit" type="submit">
+                        Отправить
+                        <img src="img/prices__img.svg" alt="" class="modal__submit-img">
+                    </button>
+                </form>
+            </div>
+        </section>
+        <section class="call-modal feedback-call">
+            <div class="call-modal__wrapper">
+                <img src="img/burger-open.svg" alt="" class="call-modal__close">
+                <h2 class="call-modal__title">Заказать звонок</h2>
+                <form action="" class="call-modal__form">
+                    <input class="call-modal__input" type="text" name="phone" placeholder="Телефон">
+                    <p class="call-modal__confirm-text">Нажимая “отправить”, вы даете согласие на <span
+                            class="call-modal__pink">обработку персональных данных</span> и соглашаетесь с нашей <span
+                            class="call-modal__pink">политикой конфиденциальности</span> </p>
+                    <button class="call-sender-btn call-modal__submit" type="submit">
+                        Отправить
+                        <img src="img/prices__img.svg" alt="" class="call-modal__submit-img">
+                    </button>
+                </form>
+            </div>
+        </section>
         <div class="container">
             <header class="header">
                 <div class="header__inner">
@@ -222,6 +258,7 @@
                     </div>
                 </div>
             </header>
+
             <div class="body">
                 <div class="body__title-repair-checkstatus">
                     <div class="body__title">
@@ -281,7 +318,7 @@
                 </div>
                 <div class="body__content-all">
                     <div class="body__content-text">
-                        <div class="body__content">
+                        <div class="body__content body__content--open">
                             <p class="content1">
                                 Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы
                                 можете
@@ -292,15 +329,25 @@
                                 подтверждает
                                 большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
                                 рекомендациям
+                                и, в свою очередь, советуют нас родным и близким. <br> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что
+                                подтверждает
+                                большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                                рекомендациям
                                 и, в свою очередь, советуют нас родным и близким.
                             </p>
                         </div>
                         <div class="expand">
-                            <botton class="expand__btn">
-                                <a href="#" class="expand__btn-link">
-                                    <img class="expand__btn-icon" src="img/icon.svg" alt="icon">
+                            <botton class="expand__btn-open expand-open">
+                                <!-- <a href="#" class="expand__btn-link"> -->
+                                    <img class="expand__btn-icon-open" src="img/icon.svg" alt="icon">
                                     Читать далее
-                                </a>
+                                <!-- </a> -->
+                            </botton>
+                            <botton class="expand__btn-close expand-close">
+                                <!-- <a href="" class="services-expand__btn-link"> -->
+                                <img class="expand__btn-icon-close" src="img/icon.svg" alt="icon">
+                                Скрыть
+                                <!-- </a> -->
                             </botton>
                         </div>
                     </div>
@@ -316,7 +363,7 @@
                     </div>
 
                     <div class="services-main" data-mobile="false">
-                        <div class="services-main__open swiper">
+                        <div class="services-main__open swiper swiper1">
                             <ul class="services-main__list swiper-wrapper">
 
                                 <li class="services-main__item swiper-slide">
@@ -408,6 +455,7 @@
                                     </button>
                                 </li>
                             </ul>
+                            <div class="swiper-pagination swiper-scrollbar"></div>
                         </div>
 
 
@@ -427,7 +475,7 @@
                             </botton>
                         </div>
                     </div>
-                    <div class="swiper-pagination swiper-scrollbar"></div>
+                    
 
                 </section>
                 <section class="tech-services">
@@ -438,7 +486,7 @@
                     </div>
 
                     <div class="tech-services-main" data-mobile="false">
-                        <div class="tech-services-main__open swiper">
+                        <div class="tech-services-main__open swiper swiper2">
                             <ul class="tech-services-main__list swiper-wrapper">
 
                                 <li class="tech-services-main__item swiper-slide">
@@ -507,8 +555,9 @@
                                 </li>
 
                             </ul>
+                            <div class="swiper-pagination swiper-scrollbar"></div>
                         </div>
-
+                        
                         <div class="tech-services-expand">
                             <botton class="tech-services-expand__btn-open open">
                                 <!-- <a href="#" class="tech-services-expand__btn-link"> -->
@@ -524,7 +573,7 @@
                             </botton>
                         </div>
                     </div>
-                    <div class="swiper-pagination swiper-scrollbar"></div>
+
                 </section>
                 <section class="price">
                     <div class="price__header">
@@ -532,7 +581,7 @@
                             Цены на услуги
                         </p>
                     </div>
-                    <div class="swiper" data-mobile="false">
+                    <div class="swiper swiper3" data-mobile="false">
                         <ul class="price__list swiper-wrapper">
                             <li class="price__item swiper-slide">
                                 <div class="price__container">
@@ -729,7 +778,7 @@
                     </botton>
                 </div>
             </div>
-            <!-- <div class="swiper-pagination swiper-scrollbar"></div> -->
+            <div class="swiper-pagination swiper-scrollbar"></div>
             <footer class="side-footer">
                 <div class="side-footer__years">
                     © 2019 CPS <br>
@@ -745,7 +794,7 @@
         </div>
 
     </div>
-
+    <div class="swiper-pagination swiper-scrollbar"></div>
     </div>
     <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
 </body>

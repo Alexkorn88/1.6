@@ -63,6 +63,15 @@
     border: 1px solid #EAEAEA;
     // margin-right: 16px;
 
+    &:hover,
+    &:focus {
+        opacity: 0.5;
+        transition-property: opacity;
+        transition-duration: 0.3s;
+        transition-delay: 0.1s;
+
+    }
+
     &__link {
         text-decoration: none;
         display: flex;
@@ -110,9 +119,11 @@
     .tech-services-header {
         padding-left: 24px;
     }
+
     .tech-services-btn {
         width: 224px;
     }
+
     .tech-services-main {
         padding-left: 24px;
         padding-right: 24px;
@@ -235,6 +246,7 @@
     .tech-services-btn {
         margin-top: 0;
     }
+
     .tech-services-main__item:nth-child(4n) {
         margin-right: 32px;
     }

@@ -9,12 +9,15 @@
   padding-bottom: 30px;
   position: relative;
   overflow: hidden;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
   }
   
   .swiper-pagination {
     position: relative !important;
     bottom: 0 !important;
     margin-top: 0px !important;
+    // height: 20px !important;
   }
   
   .swiper-pagination-bullet {
@@ -31,7 +34,7 @@
   }
   
   .swiper-slide {
-    width: 240px;
+    width: 240px !important;
     // height: 72px;
     // margin: 0 !important;
     // padding: 0 !important;
@@ -43,7 +46,7 @@
         display: none !important;
     }
     .swiper-slide {
-        width: 224px;
+        width: 224px !important;
         // max-height: none !important;
         // margin: 0;
         padding: 0;
@@ -56,7 +59,7 @@
 
   @media (min-width: 1115px) {
     .swiper-slide {
-        max-width: 240px;
+        max-width: 240px !important;
         max-height: none;
     }
   }

@@ -23,6 +23,7 @@
     padding: 16px;
 
 }
+
 .services-title {
     margin: 0;
 }
@@ -63,6 +64,16 @@
     border: 1px solid #EAEAEA;
     // margin-right: 16px;
 
+
+    &:hover,
+    &:focus {
+        opacity: 0.5;
+        transition-property: opacity;
+        transition-duration: 0.3s;
+        transition-delay: 0.1s;
+
+    }
+
     &__link {
         text-decoration: none;
         display: flex;
@@ -91,10 +102,12 @@ li .apple {
     .services-header {
         padding-left: 24px;
     }
+
     .services-btn {
         width: 224px;
-       
+
     }
+
     .services-main {
         padding-left: 24px;
         padding-right: 24px;
@@ -217,6 +230,7 @@ li .apple {
     .services-btn {
         margin-top: 0;
     }
+
     .services-main__item:nth-child(4n) {
         margin-right: 32px;
     }

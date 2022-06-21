@@ -1,7 +1,9 @@
 import '../scss/style.scss';
 import './burger';
-
-// import './techServicesBtn';
-import './swiper';
+import './modalChat';
+import './modalCall';
+import './modalCallMenu';
+import './swiper1';
+import './expandBtn';
 import './servicesBtn';
 import './techServicesBtn';

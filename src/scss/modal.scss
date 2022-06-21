@@ -1,0 +1,144 @@
+.modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 100%;
+    background-color: #fff;
+    padding: 24px 16px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    transform: translateX(150%);
+    transition: 350ms ease-in-out;
+
+    &--hide {
+        // display: none;
+        transform: translateX(0);
+    }
+
+    // &__close {
+
+    // }
+
+
+    &__title {
+        font-family: 'TT Lakes';
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height, or 133% */
+
+        letter-spacing: -0.6px;
+
+        color: #1B1C21;
+        margin-top: 40px;
+    }
+
+    &__title::before {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 40px;
+        border-radius: 0 25px 25px 0;
+        background-color: #41F6D7;
+        position: absolute;
+        left: 0;
+        top: 100px;
+    }
+
+    &__input {
+        font-family: 'TT Lakes';
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+        // font-weight: 500;
+        letter-spacing: -0.2px;
+        color: #B5B6BC;
+
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        border-radius: 8px;
+        width: 100%;
+        padding: 12px 16px;
+        margin-bottom: 16px;
+    }
+
+    &__confirm-text {
+        font-family: 'TT Lakes';
+        font-size: 14px;
+        line-height: 16px;
+        /* or 114% */
+        font-weight: 500;
+
+        color: #7E7E82;
+    }
+
+    &__pink {
+        color: #FF3E79;
+    }
+}
+
+.sender-btn {
+
+    // display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    // top: 165px;
+    // left: 120px;
+    // bottom: 16px;
+
+
+    // position: relative;
+    border-radius: 16px;
+    background-color: #FF3E79;
+    border: none;
+    width: 136px;
+    height: 32px;
+    font-family: 'TT Lakes';
+    font-size: 12px;
+    line-height: 24px;
+    /* identical to box height, or 200% */
+
+    text-align: right;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 152px;
+
+}
+
+@media (min-width: 380px) {
+    .modal {
+        padding: 24px 24px;
+    }
+
+    .sender-btn {
+        left: 196px;
+    }
+}
+
+@media (min-width: 760px) {
+    .modal {
+        width: 440px;
+        padding: 24px 32px;
+
+        &__close {
+            position: relative;
+            right: 110px;
+        }
+
+        &__title {
+            margin-top: -36px;
+        }
+
+        &__title::before {
+            top: 25px;
+        }
+    }
+
+    .sender-btn {
+        left: 238px;
+    }
+}

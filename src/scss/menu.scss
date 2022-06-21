@@ -10,10 +10,12 @@
     background-color: #fff;
     // box-shadow:  16px 0 52px 0 rgba(14, 24, 80, 0.2);
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
-    transition: transform 1s ease-in-out;
+    transform: translateX(-150%);
+    transition: 350ms ease-in-out;
+    
     &--hide {
-    display: none;
-    transition: transform 1s ease-in-out;
+    // display: none;
+     transform: translateX(0);
     }
   }
   
@@ -299,6 +301,7 @@
         position: relative;
         box-shadow: none;
         height: 100%;
+        transform: translateX(0);
       }
       .menu-language {
         margin-bottom: 970px;

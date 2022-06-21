@@ -2,12 +2,13 @@
 /* .body {} */
 .body {
     // height: 100%;
-    border-color: #F8F8F8;
+    background-color: #F8F8F8;
     &__title-repair-checkstatus {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 24px 16px;
+      // margin: 24px 16px;
+      padding: 24px 16px;
       position: relative;
       right: 16px;
       
@@ -43,7 +44,26 @@
   
     &__repair-btn {
       margin-right: 32px;
+      &:hover,
+      &:focus {
+          opacity: 0.5;
+          transition-property: opacity;
+          transition-duration: 0.3s;
+          transition-delay: 0.1s;
+      
+      }
     }
+    &__checkstatus-btn {
+      &:hover,
+      &:focus {
+          opacity: 0.5;
+          transition-property: opacity;
+          transition-duration: 0.3s;
+          transition-delay: 0.1s;
+      
+      }
+    }
+
   
     &__repair-btn,
     &__checkstatus-btn {
@@ -95,9 +115,14 @@
     }
   
     &__content {
+      
       margin-left: 16px;
       margin-right: 16px;
       overflow: hidden;
+      &--open {
+        max-height: 90px;
+      }
+      
     }
   
     &__content-pictures {
@@ -123,6 +148,10 @@
     opacity: 0.1;
   }
 
+  .transpsransyMax {
+    opacity: 0.02;
+  }
+
   @media (min-width: 760px) {
     .body {
         &__title h1 {
@@ -142,9 +171,12 @@
     
         &__content {
           max-width: 312px;
-          max-height: 160px;
+          
           /* padding-left: 24px; */
           margin-left: 0;
+          &--open {
+            max-height: 160px;
+          }
         }
     
         &__content-text {
@@ -179,7 +211,7 @@
         }
     
         &__title-repair-checkstatus {
-          margin-top: 42px;
+          padding-top: 42px;
         }
     
         &__side-menu {
@@ -194,8 +226,11 @@
     
         &__content {
           max-width: 490px;
-          max-height: 160px;
+         
           margin-left: 0px;
+          &--open {
+            max-height: 160px;
+          }
         }
     
         &__content-text {
@@ -222,5 +257,8 @@
           margin-top: 14px;
         }
     
+      }
+      .transpsransy {
+        display: none;
       }
   }

@@ -1,51 +1,4 @@
-// /* eslint-disable require-jsdoc */
-
-// import Swiper, {Navigation, Pagination} from 'swiper';
-// import 'swiper/swiper.scss';
-// import 'swiper/modules/pagination/pagination.scss';
-// Swiper.use([Navigation, Pagination]);
-
-
-// const sliders = document.querySelectorAll('.swiper');
-// sliders.forEach((el) => {
-//   let mobSwiper;
-
-
-//   function mobileSlider() {
-//     if (window.innerWidth <= 760) {
-//       // console.log('Swiper');
-//       mobSwiper = new Swiper(el, {
-
-//         slidesPerView: 'auto',
-//         pagination: {
-//           el: el.querySelector('.swiper-pagination'),
-//           type: 'bullets',
-//           clickable: true,
-//         },
-
-//         spaceBetween: 16,
-//       });
-
-//       // sliders.dataset.mobile = 'true';
-//     }
-
-//     if (window.innerWidth > 760) {
-//       // console.log('Big');
-//       const newLocal = 'swiper-initialized';
-//       // sliders.dataset.mobile = 'false';
-
-//       if (sliders.classList.contains(newLocal)) {
-//         mobSwiper.destroy();
-//       }
-//     }
-//   }
-
-//   mobileSlider();
-
-//   window.addEventListener('resize', () => {
-//     mobileSlider();
-//   });
-// });
+/* eslint-disable require-jsdoc */
 
 import Swiper, {Navigation, Pagination} from 'swiper';
 import 'swiper/swiper.scss';
@@ -95,3 +48,4 @@ breakPoint.addListener(breakpointChecker);
 
 // kickstart
 breakpointChecker();
+
